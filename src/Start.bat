@@ -8,9 +8,9 @@ set "PYW=%HERE%runtime\pythonw.exe"
 set "PY=%HERE%runtime\python.exe"
 
 if not exist "%PY%" goto :nopython
-if not exist "%HERE%app.py" goto :noapp
+if not exist "%HERE%app_sidebar.py" goto :noapp
 
-start "" /D "%HERE%" "%PYW%" "%HERE%app.py"
+start "" /D "%HERE%" "%PYW%" "%HERE%app_sidebar.py"
 exit /b 0
 
 :nopython
@@ -19,6 +19,6 @@ pause
 exit /b 1
 
 :noapp
-echo  [ERROR] app.py not found next to this file.
+echo  [ERROR] app_sidebar.py not found next to this file.
 pause
 exit /b 1
