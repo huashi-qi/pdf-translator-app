@@ -31,7 +31,7 @@ def build_sidebar_ui(root, tk, ttk, C, api):
     root : Tk 根窗口
     tk, ttk : tkinter 模块
     C    : 当前主题配色
-    api  : app.py 提供的回调字典，键包括
+    api  : core.py / 调用方提供的回调字典，键包括
            log, set_status, pick_pdf, to_word, pdf_tools, open_pdf,
            inspect_tools, open_settings, refresh_history, load_history,
            history_actions(refresh) 等
