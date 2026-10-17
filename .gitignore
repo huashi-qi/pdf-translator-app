@@ -1,0 +1,50 @@
+# ---- 运行时与依赖（体积巨大，不入库）----
+runtime/
+release/
+build/
+server/
+cache/
+vendor/
+
+# ---- 缓存的模型与字体（340 MB）----
+*.onnx
+**/babeldoc/fonts/
+**/babeldoc/models/
+**/babeldoc/cmap/
+
+# ---- 翻译产物 ----
+output/
+*.docx
+*.doc
+**/*.zh-CN.*.pdf
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# ---- 系统 / 编辑器 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# ---- 临时文件 ----
+_*/
+*.tmp
+*.log
+*.bak
+**/~$*
+
+# ---- 本机配置（含个人路径与密钥）----
+config.local.json
+history.json
+*.local.json
+
+# ---- macOS 打包残留 ----
+__MACOSX/

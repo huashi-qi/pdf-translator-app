@@ -1,0 +1,1101 @@
+﻿source,target,tgt_lng,domain
+Step-Down Converter,降压转换器,zh_cn,power
+Buck Converter,降压变换器,zh_cn,power
+Boost Converter,升压转换器,zh_cn,power
+Buck-Boost Converter,升降压转换器,zh_cn,power
+Step-Up Converter,升压转换器,zh_cn,power
+Switching Regulator,开关稳压器,zh_cn,power
+Linear Regulator,线性稳压器,zh_cn,power
+Low Dropout Regulator,低压差线性稳压器,zh_cn,power
+LDO Regulator,低压差稳压器,zh_cn,power
+Voltage Regulator,稳压器,zh_cn,power
+DC-DC Converter,直流-直流转换器,zh_cn,power
+Inverting Converter,反相转换器,zh_cn,power
+Flyback Converter,反激式转换器,zh_cn,power
+Forward Converter,正激式转换器,zh_cn,power
+Charge Pump,电荷泵,zh_cn,
+Switched-Capacitor Converter,开关电容转换器,zh_cn,power
+Power Management IC,电源管理芯片,zh_cn,power
+Power Supply,电源,zh_cn,power
+Power Stage,功率级,zh_cn,power
+Duty Cycle,占空比,zh_cn,power
+Switching Frequency,开关频率,zh_cn,power
+Switching Loss,开关损耗,zh_cn,power
+Conduction Loss,导通损耗,zh_cn,
+Efficiency,效率,zh_cn,power
+Peak Efficiency,峰值效率,zh_cn,power
+Quiescent Current,静态电流,zh_cn,power
+Shutdown Current,关断电流,zh_cn,power
+Standby Current,待机电流,zh_cn,power
+Supply Current,电源电流,zh_cn,power
+Ground Current,接地电流,zh_cn,power
+Input Voltage,输入电压,zh_cn,power
+Output Voltage,输出电压,zh_cn,power
+Supply Voltage,电源电压,zh_cn,power
+Reference Voltage,基准电压,zh_cn,power
+Threshold Voltage,阈值电压,zh_cn,power
+Forward Voltage,正向电压,zh_cn,power
+Voltage Drop,电压降,zh_cn,power
+Voltage Ripple,电压纹波,zh_cn,power
+Ripple Voltage,纹波电压,zh_cn,power
+Ripple Current,纹波电流,zh_cn,power
+Output Ripple,输出纹波,zh_cn,power
+Line Regulation,线性调整率,zh_cn,
+Load Regulation,负载调整率,zh_cn,power
+Transient Response,瞬态响应,zh_cn,power
+Load Transient,负载瞬变,zh_cn,power
+Settling Time,稳定时间,zh_cn,
+Start-Up Time,启动时间,zh_cn,
+Soft-Start,软启动,zh_cn,power
+Soft-Stop,软停止,zh_cn,
+Inrush Current,浪涌电流,zh_cn,power
+Peak Current,峰值电流,zh_cn,power
+Valley Current,谷值电流,zh_cn,power
+Current Limit,电流限制,zh_cn,power
+Current Limiting,限流,zh_cn,power
+Overcurrent Protection,过流保护,zh_cn,power
+Overvoltage Protection,过压保护,zh_cn,power
+Undervoltage Protection,欠压保护,zh_cn,power
+Overvoltage Lockout,过压锁定,zh_cn,power
+Under-Voltage Lockout,欠压锁定,zh_cn,power
+Thermal Shutdown,过温保护,zh_cn,power
+Thermal Protection,热保护,zh_cn,package
+Over-Temperature Protection,过温保护,zh_cn,
+Short-Circuit Protection,短路保护,zh_cn,
+Reverse Current Protection,反向电流保护,zh_cn,power
+Power Good,电源正常指示,zh_cn,power
+Power-On Reset,上电复位,zh_cn,power
+Enable Pin,使能引脚,zh_cn,package
+Shutdown Pin,关断引脚,zh_cn,package
+Feedback Pin,反馈引脚,zh_cn,analog
+Feedback Divider,反馈分压器,zh_cn,analog
+Feedback Loop,反馈环路,zh_cn,analog
+Compensation Network,补偿网络,zh_cn,
+Loop Compensation,环路补偿,zh_cn,
+Phase Margin,相位裕度,zh_cn,
+Gain Margin,增益裕度,zh_cn,analog
+Crossover Frequency,穿越频率,zh_cn,rf
+Bandwidth,带宽,zh_cn,analog
+Stability,稳定性,zh_cn,
+Current-Mode Control,电流模式控制,zh_cn,power
+Voltage-Mode Control,电压模式控制,zh_cn,power
+Peak Current Mode,峰值电流模式,zh_cn,power
+Hysteretic Control,迟滞控制,zh_cn,
+Pulse-Width Modulation,脉宽调制,zh_cn,
+PWM Control,脉宽调制控制,zh_cn,power
+PFM Mode,脉冲频率调制模式,zh_cn,
+Burst Mode,突发模式,zh_cn,
+Skip Mode,跳周期模式,zh_cn,
+Forced Continuous Conduction Mode,强制连续导通模式,zh_cn,
+Discontinuous Conduction Mode,断续导通模式,zh_cn,
+Continuous Conduction Mode,连续导通模式,zh_cn,
+Synchronous Rectification,同步整流,zh_cn,
+Asynchronous Rectification,异步整流,zh_cn,
+High-Side MOSFET,高边 MOSFET,zh_cn,device
+Low-Side MOSFET,低边 MOSFET,zh_cn,device
+Power MOSFET,功率 MOSFET,zh_cn,power
+Internal MOSFET,内部 MOSFET,zh_cn,device
+Switching Transistor,开关晶体管,zh_cn,power
+Rectifier Diode,整流二极管,zh_cn,device
+Schottky Diode,肖特基二极管,zh_cn,device
+Body Diode,体二极管,zh_cn,device
+Freewheeling Diode,续流二极管,zh_cn,device
+Catch Diode,续流二极管,zh_cn,device
+Inductor,电感,zh_cn,power
+Inductance,电感量,zh_cn,
+Output Inductor,输出电感,zh_cn,power
+Saturation Current,饱和电流,zh_cn,power
+Saturation Voltage,饱和电压,zh_cn,power
+DC Resistance,直流电阻,zh_cn,
+Equivalent Series Resistance,等效串联电阻,zh_cn,
+Equivalent Series Inductance,等效串联电感,zh_cn,
+Capacitor,电容,zh_cn,power
+Ceramic Capacitor,陶瓷电容,zh_cn,power
+Electrolytic Capacitor,电解电容,zh_cn,power
+Tantalum Capacitor,钽电容,zh_cn,power
+Input Capacitor,输入电容,zh_cn,power
+Output Capacitor,输出电容,zh_cn,power
+Decoupling Capacitor,去耦电容,zh_cn,power
+Bypass Capacitor,旁路电容,zh_cn,power
+Bootstrap Capacitor,自举电容,zh_cn,power
+Compensation Capacitor,补偿电容,zh_cn,power
+Filter Capacitor,滤波电容,zh_cn,power
+Resistor Divider,电阻分压器,zh_cn,
+Current Sense Resistor,电流检测电阻,zh_cn,power
+Shunt Resistor,分流电阻,zh_cn,
+Load Resistor,负载电阻,zh_cn,power
+Pull-Up Resistor,上拉电阻,zh_cn,
+Pull-Down Resistor,下拉电阻,zh_cn,
+Operational Amplifier,运算放大器,zh_cn,analog
+Instrumentation Amplifier,仪表放大器,zh_cn,analog
+Difference Amplifier,差分放大器,zh_cn,analog
+Differential Amplifier,差分放大器,zh_cn,analog
+Differential Input,差分输入,zh_cn,power
+Single-Ended Input,单端输入,zh_cn,power
+Common-Mode,共模,zh_cn,analog
+Common-Mode Voltage,共模电压,zh_cn,power
+Common-Mode Range,共模范围,zh_cn,analog
+Common-Mode Rejection Ratio,共模抑制比,zh_cn,analog
+Power Supply Rejection Ratio,电源抑制比,zh_cn,power
+Input Offset Voltage,输入失调电压,zh_cn,power
+Offset Voltage,失调电压,zh_cn,power
+Offset Drift,失调漂移,zh_cn,analog
+Input Bias Current,输入偏置电流,zh_cn,power
+Input Offset Current,输入失调电流,zh_cn,power
+Input Leakage Current,输入漏电流,zh_cn,power
+Input Impedance,输入阻抗,zh_cn,power
+Output Impedance,输出阻抗,zh_cn,power
+Open-Loop Gain,开环增益,zh_cn,analog
+Closed-Loop Gain,闭环增益,zh_cn,analog
+Unity-Gain Bandwidth,单位增益带宽,zh_cn,analog
+Gain Bandwidth Product,增益带宽积,zh_cn,analog
+Slew Rate,压摆率,zh_cn,analog
+Rail-to-Rail,轨到轨,zh_cn,
+Rail-to-Rail Input,轨到轨输入,zh_cn,power
+Rail-to-Rail Output,轨到轨输出,zh_cn,power
+Output Swing,输出摆幅,zh_cn,power
+Voltage Swing,电压摆幅,zh_cn,power
+Total Harmonic Distortion,总谐波失真,zh_cn,analog
+Total Harmonic Distortion Plus Noise,总谐波失真加噪声,zh_cn,analog
+Signal-to-Noise Ratio,信噪比,zh_cn,analog
+Noise Density,噪声密度,zh_cn,analog
+Input-Referred Noise,输入折合噪声,zh_cn,power
+Flicker Noise,闪烁噪声,zh_cn,analog
+Thermal Noise,热噪声,zh_cn,analog
+Overload Recovery,过载恢复,zh_cn,power
+Phase Reversal,相位反转,zh_cn,
+Gain Error,增益误差,zh_cn,analog
+Gain Nonlinearity,增益非线性,zh_cn,analog
+Integral Nonlinearity,积分非线性,zh_cn,
+Differential Nonlinearity,微分非线性,zh_cn,analog
+Signal Chain,信号链,zh_cn,analog
+Analog Front End,模拟前端,zh_cn,
+Analog-to-Digital Converter,模数转换器,zh_cn,power
+Digital-to-Analog Converter,数模转换器,zh_cn,power
+Successive Approximation Register,逐次逼近型寄存器,zh_cn,digital
+Delta-Sigma Modulator,Δ-Σ 调制器,zh_cn,rf
+Sample Rate,采样率,zh_cn,
+Sampling Rate,采样速率,zh_cn,
+Nyquist Frequency,奈奎斯特频率,zh_cn,rf
+Aliasing,混叠,zh_cn,
+Anti-Aliasing Filter,抗混叠滤波器,zh_cn,analog
+Quantization Error,量化误差,zh_cn,
+Resolution,分辨率,zh_cn,
+Effective Number of Bits,有效位数,zh_cn,
+Signal-to-Noise and Distortion,信纳比,zh_cn,analog
+Spurious-Free Dynamic Range,无杂散动态范围,zh_cn,
+Reference Input,基准输入,zh_cn,power
+Conversion Time,转换时间,zh_cn,
+Acquisition Time,采集时间,zh_cn,
+Multiplexer,多路复用器,zh_cn,
+Programmable Gain Amplifier,可编程增益放大器,zh_cn,analog
+Variable Gain Amplifier,可变增益放大器,zh_cn,analog
+Buffer Amplifier,缓冲放大器,zh_cn,analog
+Voltage Follower,电压跟随器,zh_cn,power
+Comparator,比较器,zh_cn,analog
+Hysteresis,迟滞,zh_cn,
+Schmitt Trigger,施密特触发器,zh_cn,
+Current Mirror,电流镜,zh_cn,power
+Current Source,电流源,zh_cn,power
+Voltage Reference,电压基准,zh_cn,power
+Bandgap Reference,带隙基准,zh_cn,analog
+Low-Pass Filter,低通滤波器,zh_cn,analog
+High-Pass Filter,高通滤波器,zh_cn,analog
+Band-Pass Filter,带通滤波器,zh_cn,analog
+Notch Filter,陷波滤波器,zh_cn,analog
+Active Filter,有源滤波器,zh_cn,analog
+Passive Filter,无源滤波器,zh_cn,analog
+Cutoff Frequency,截止频率,zh_cn,rf
+Corner Frequency,转折频率,zh_cn,rf
+Passband,通带,zh_cn,
+Stopband,阻带,zh_cn,
+Attenuation,衰减,zh_cn,
+Roll-Off,滚降,zh_cn,
+Filter Order,滤波器阶数,zh_cn,analog
+Butterworth Filter,巴特沃斯滤波器,zh_cn,analog
+Bessel Filter,贝塞尔滤波器,zh_cn,analog
+Chebyshev Filter,切比雪夫滤波器,zh_cn,analog
+Transfer Function,传递函数,zh_cn,
+Frequency Response,频率响应,zh_cn,rf
+Magnitude Response,幅频响应,zh_cn,
+Phase Response,相频响应,zh_cn,
+Bode Plot,波特图,zh_cn,
+Pole,极点,zh_cn,
+Zero,零点,zh_cn,
+Microcontroller,微控制器,zh_cn,digital
+Microprocessor,微处理器,zh_cn,
+System on Chip,片上系统,zh_cn,
+Application Specific Integrated Circuit,专用集成电路,zh_cn,
+Field Programmable Gate Array,现场可编程门阵列,zh_cn,digital
+Digital Signal Processor,数字信号处理器,zh_cn,analog
+Central Processing Unit,中央处理器,zh_cn,
+Arithmetic Logic Unit,算术逻辑单元,zh_cn,
+Register File,寄存器堆,zh_cn,digital
+Program Counter,程序计数器,zh_cn,digital
+Stack Pointer,堆栈指针,zh_cn,
+Instruction Set,指令集,zh_cn,
+Clock Cycle,时钟周期,zh_cn,digital
+Clock Frequency,时钟频率,zh_cn,digital
+Clock Source,时钟源,zh_cn,digital
+Crystal Oscillator,晶体振荡器,zh_cn,
+Ceramic Resonator,陶瓷谐振器,zh_cn,digital
+Phase-Locked Loop,锁相环,zh_cn,
+Duty Cycle Distortion,占空比失真,zh_cn,power
+Jitter,抖动,zh_cn,
+Propagation Delay,传播延迟,zh_cn,
+Setup Time,建立时间,zh_cn,
+Hold Time,保持时间,zh_cn,
+Rise Time,上升时间,zh_cn,
+Fall Time,下降时间,zh_cn,
+Timing Diagram,时序图,zh_cn,digital
+Logic Level,逻辑电平,zh_cn,
+Logic High,逻辑高电平,zh_cn,
+Logic Low,逻辑低电平,zh_cn,
+Threshold,阈值,zh_cn,device
+Fan-Out,扇出,zh_cn,
+Tri-State,三态,zh_cn,
+Open-Drain,开漏,zh_cn,device
+Push-Pull,推挽,zh_cn,
+Interrupt,中断,zh_cn,digital
+Interrupt Vector,中断向量,zh_cn,digital
+Interrupt Priority,中断优先级,zh_cn,digital
+Direct Memory Access,直接内存访问,zh_cn,
+Memory-Mapped,内存映射,zh_cn,
+Address Bus,地址总线,zh_cn,digital
+Data Bus,数据总线,zh_cn,digital
+Serial Peripheral Interface,串行外设接口,zh_cn,digital
+Inter-Integrated Circuit,集成电路总线,zh_cn,
+Universal Asynchronous Receiver Transmitter,通用异步收发器,zh_cn,
+Universal Serial Bus,通用串行总线,zh_cn,digital
+Controller Area Network,控制器局域网,zh_cn,
+Local Interconnect Network,局域互联网络,zh_cn,
+General Purpose Input Output,通用输入输出,zh_cn,power
+Analog Input,模拟输入,zh_cn,power
+Digital Input,数字输入,zh_cn,power
+Watchdog Timer,看门狗定时器,zh_cn,digital
+Real-Time Clock,实时时钟,zh_cn,digital
+Pulse Width Modulator,脉宽调制器,zh_cn,rf
+Counter,计数器,zh_cn,digital
+Timer,定时器,zh_cn,digital
+Prescaler,预分频器,zh_cn,
+Capture Compare,捕获比较,zh_cn,
+Flash Memory,闪存,zh_cn,digital
+Electrically Erasable Programmable Read-Only Memory,电可擦可编程只读存储器,zh_cn,digital
+Random Access Memory,随机存取存储器,zh_cn,
+Static Random Access Memory,静态随机存取存储器,zh_cn,
+Dynamic Random Access Memory,动态随机存取存储器,zh_cn,
+Read-Only Memory,只读存储器,zh_cn,
+Non-Volatile Memory,非易失性存储器,zh_cn,
+Memory Cell,存储单元,zh_cn,
+Endurance,耐久性,zh_cn,
+Retention,保持特性,zh_cn,
+Erase Cycle,擦写次数,zh_cn,
+Page Buffer,页缓冲器,zh_cn,
+Sector Erase,扇区擦除,zh_cn,
+Boot Loader,引导加载程序,zh_cn,power
+Firmware,固件,zh_cn,
+Boot Mode,启动模式,zh_cn,
+Reset Vector,复位向量,zh_cn,digital
+Brown-Out Reset,欠压复位,zh_cn,digital
+In-System Programming,在系统编程,zh_cn,digital
+Debug Interface,调试接口,zh_cn,digital
+Joint Test Action Group,联合测试行动组,zh_cn,
+Boundary Scan,边界扫描,zh_cn,digital
+Clock Gating,时钟门控,zh_cn,digital
+Power Gating,电源门控,zh_cn,power
+Low-Power Mode,低功耗模式,zh_cn,power
+Sleep Mode,睡眠模式,zh_cn,
+Deep Sleep,深度睡眠,zh_cn,
+Wake-Up Time,唤醒时间,zh_cn,
+Dynamic Voltage Scaling,动态电压调节,zh_cn,power
+Duty Cycling,占空比循环,zh_cn,power
+Bus Contention,总线争用,zh_cn,digital
+Arbitration,仲裁,zh_cn,
+Handshaking,握手,zh_cn,
+Protocol,协议,zh_cn,digital
+Frame,帧,zh_cn,digital
+Packet,数据包,zh_cn,
+Checksum,校验和,zh_cn,
+Cyclic Redundancy Check,循环冗余校验,zh_cn,
+Error Correction Code,纠错码,zh_cn,
+Bit Error Rate,误码率,zh_cn,
+Baud Rate,波特率,zh_cn,
+Data Rate,数据速率,zh_cn,
+Throughput,吞吐量,zh_cn,
+Latency,延迟,zh_cn,
+Differential Signaling,差分信号,zh_cn,analog
+Common-Mode Noise,共模噪声,zh_cn,analog
+Termination Resistor,终端匹配电阻,zh_cn,
+Impedance Matching,阻抗匹配,zh_cn,analog
+Reflection,反射,zh_cn,
+Eye Diagram,眼图,zh_cn,digital
+Absolute Maximum Ratings,绝对最大额定值,zh_cn,
+Recommended Operating Conditions,推荐工作条件,zh_cn,
+Electrical Characteristics,电气特性,zh_cn,
+Typical Performance Characteristics,典型性能特性,zh_cn,rf
+Functional Block Diagram,功能框图,zh_cn,digital
+Block Diagram,框图,zh_cn,digital
+Pin Configuration,引脚配置,zh_cn,package
+Pin Description,引脚说明,zh_cn,package
+Pin Assignment,引脚分配,zh_cn,package
+Application Information,应用信息,zh_cn,
+Applications Information,应用信息,zh_cn,
+Typical Application,典型应用,zh_cn,
+Typical Application Circuit,典型应用电路,zh_cn,
+Ordering Information,订购信息,zh_cn,
+Part Number,器件型号,zh_cn,
+Package Outline,封装外形,zh_cn,package
+Package Dimensions,封装尺寸,zh_cn,package
+Land Pattern,焊盘图形,zh_cn,
+Footprint,封装尺寸图,zh_cn,package
+Solder Mask,阻焊层,zh_cn,package
+Solder Paste,锡膏,zh_cn,package
+Reflow Soldering,回流焊,zh_cn,package
+Wave Soldering,波峰焊,zh_cn,package
+Soldering Temperature,焊接温度,zh_cn,package
+Peak Reflow Temperature,峰值回流温度,zh_cn,package
+Moisture Sensitivity Level,湿敏等级,zh_cn,package
+Thermal Resistance,热阻,zh_cn,package
+Junction Temperature,结温,zh_cn,device
+Ambient Temperature,环境温度,zh_cn,
+Case Temperature,外壳温度,zh_cn,
+Storage Temperature,存储温度,zh_cn,
+Operating Temperature Range,工作温度范围,zh_cn,
+Industrial Grade,工业级,zh_cn,
+Automotive Grade,汽车级,zh_cn,
+Junction-to-Ambient,结到环境,zh_cn,device
+Junction-to-Case,结到外壳,zh_cn,device
+Thermal Pad,散热焊盘,zh_cn,package
+Exposed Pad,外露焊盘,zh_cn,package
+Heat Sink,散热器,zh_cn,
+Thermal Vias,散热过孔,zh_cn,package
+Printed Circuit Board,印制电路板,zh_cn,
+PCB Layout,电路板布局,zh_cn,
+Layout Guidelines,布局指南,zh_cn,
+Ground Plane,接地平面,zh_cn,
+Power Plane,电源平面,zh_cn,power
+Star Ground,星型接地,zh_cn,
+Single-Point Ground,单点接地,zh_cn,
+Ground Loop,接地环路,zh_cn,
+Trace Width,走线宽度,zh_cn,
+Trace Length,走线长度,zh_cn,
+Copper Pour,覆铜,zh_cn,
+Via,过孔,zh_cn,
+Blind Via,盲孔,zh_cn,
+Buried Via,埋孔,zh_cn,
+Microvia,微孔,zh_cn,
+Layer Stack-Up,层叠结构,zh_cn,
+Controlled Impedance,阻抗控制,zh_cn,analog
+Electromagnetic Interference,电磁干扰,zh_cn,rf
+Electromagnetic Compatibility,电磁兼容,zh_cn,
+Radiated Emission,辐射发射,zh_cn,
+Conducted Emission,传导发射,zh_cn,
+Susceptibility,敏感度,zh_cn,
+Shielding,屏蔽,zh_cn,
+Guard Ring,保护环,zh_cn,
+Kelvin Connection,开尔文连接,zh_cn,
+Four-Wire Sensing,四线制检测,zh_cn,
+Electrostatic Discharge,静电放电,zh_cn,
+Human Body Model,人体模型,zh_cn,
+Charged Device Model,带电器件模型,zh_cn,
+Latch-Up,闩锁效应,zh_cn,
+ESD Protection,静电保护,zh_cn,package
+Electrical Overstress,电过应力,zh_cn,
+Accelerated Life Test,加速寿命试验,zh_cn,
+Burn-In,老化筛选,zh_cn,
+High-Temperature Operating Life,高温工作寿命,zh_cn,
+Temperature Cycling,温度循环,zh_cn,
+Highly Accelerated Stress Test,高加速应力试验,zh_cn,
+Failure Mode,失效模式,zh_cn,
+Failure Analysis,失效分析,zh_cn,
+Mean Time Between Failures,平均无故障时间,zh_cn,
+Fit Rate,失效率,zh_cn,
+Screening,筛选,zh_cn,
+Qualification,认证,zh_cn,
+Reliability,可靠性,zh_cn,package
+Wafer,晶圆,zh_cn,
+Die,裸片,zh_cn,
+Bond Wire,键合线,zh_cn,
+Lead Frame,引线框架,zh_cn,digital
+Molding Compound,塑封料,zh_cn,
+Wire Bonding,引线键合,zh_cn,
+Flip Chip,倒装芯片,zh_cn,
+Ball Grid Array,球栅阵列,zh_cn,
+Quad Flat Package,四方扁平封装,zh_cn,package
+Small Outline Package,小外形封装,zh_cn,package
+Dual In-line Package,双列直插封装,zh_cn,package
+Chip Scale Package,芯片级封装,zh_cn,package
+Wafer Level Package,晶圆级封装,zh_cn,package
+Through-Silicon Via,硅通孔,zh_cn,
+System in Package,系统级封装,zh_cn,package
+Multi-Chip Module,多芯片模块,zh_cn,
+Die Attach,芯片粘接,zh_cn,
+Underfill,底部填充,zh_cn,rf
+Delamination,分层,zh_cn,
+Popcorn Cracking,爆米花开裂,zh_cn,
+Solder Joint,焊点,zh_cn,package
+Intermetallic Compound,金属间化合物,zh_cn,
+Whisker,晶须,zh_cn,
+Corrosion,腐蚀,zh_cn,
+Metal-Oxide-Semiconductor Field-Effect Transistor,金属氧化物半导体场效应晶体管,zh_cn,device
+Bipolar Junction Transistor,双极结型晶体管,zh_cn,device
+Insulated Gate Bipolar Transistor,绝缘栅双极型晶体管,zh_cn,device
+Junction Field-Effect Transistor,结型场效应晶体管,zh_cn,device
+N-Channel,N 沟道,zh_cn,device
+P-Channel,P 沟道,zh_cn,device
+Enhancement Mode,增强型,zh_cn,device
+Depletion Mode,耗尽型,zh_cn,device
+Gate,栅极,zh_cn,device
+Source,源极,zh_cn,device
+Drain,漏极,zh_cn,device
+Gate Threshold Voltage,栅极阈值电压,zh_cn,power
+On-Resistance,导通电阻,zh_cn,
+Channel Resistance,沟道电阻,zh_cn,device
+Gate Charge,栅极电荷,zh_cn,device
+Total Gate Charge,总栅极电荷,zh_cn,device
+Input Capacitance,输入电容量,zh_cn,power
+Output Capacitance,输出电容量,zh_cn,power
+Reverse Transfer Capacitance,反向传输电容,zh_cn,device
+Switching Time,开关时间,zh_cn,power
+Turn-On Delay,开通延迟,zh_cn,
+Turn-Off Delay,关断延迟,zh_cn,
+Safe Operating Area,安全工作区,zh_cn,
+Avalanche Breakdown,雪崩击穿,zh_cn,device
+Zener Breakdown,齐纳击穿,zh_cn,device
+Breakdown Voltage,击穿电压,zh_cn,power
+Drain-Source Voltage,漏源电压,zh_cn,power
+Gate-Source Voltage,栅源电压,zh_cn,power
+Diode Forward Voltage,二极管正向电压,zh_cn,power
+Reverse Recovery Time,反向恢复时间,zh_cn,device
+Reverse Recovery Charge,反向恢复电荷,zh_cn,device
+Depletion Region,耗尽区,zh_cn,device
+Space Charge Region,空间电荷区,zh_cn,
+Barrier Height,势垒高度,zh_cn,
+Built-In Potential,内建电势,zh_cn,
+Carrier Mobility,载流子迁移率,zh_cn,
+Electron Mobility,电子迁移率,zh_cn,
+Hole Mobility,空穴迁移率,zh_cn,
+Doping Concentration,掺杂浓度,zh_cn,package
+Substrate,衬底,zh_cn,device
+Epitaxial Layer,外延层,zh_cn,
+Passivation Layer,钝化层,zh_cn,
+Oxide Thickness,氧化层厚度,zh_cn,
+Channel Length,沟道长度,zh_cn,device
+Channel Width,沟道宽度,zh_cn,device
+Aspect Ratio,宽长比,zh_cn,
+Transconductance,跨导,zh_cn,
+Early Voltage,厄利电压,zh_cn,power
+Current Gain,电流增益,zh_cn,power
+Transition Frequency,特征频率,zh_cn,rf
+Parasitic Capacitance,寄生电容,zh_cn,
+Parasitic Resistance,寄生电阻,zh_cn,
+Leakage Current,漏电流,zh_cn,power
+Subthreshold Leakage,亚阈值漏电,zh_cn,device
+Gate Leakage,栅极漏电,zh_cn,device
+Junction Capacitance,结电容,zh_cn,device
+Thermal Runaway,热失控,zh_cn,package
+Secondary Breakdown,二次击穿,zh_cn,device
+Bandgap,带隙,zh_cn,
+Energy Band,能带,zh_cn,
+Conduction Band,导带,zh_cn,
+Valence Band,价带,zh_cn,
+Fermi Level,费米能级,zh_cn,
+Intrinsic Semiconductor,本征半导体,zh_cn,device
+Extrinsic Semiconductor,杂质半导体,zh_cn,device
+N-Type,N 型,zh_cn,
+P-Type,P 型,zh_cn,
+PN Junction,PN 结,zh_cn,device
+Battery Charger,电池充电器,zh_cn,power
+Linear Charger,线性充电器,zh_cn,power
+Switching Charger,开关充电器,zh_cn,power
+Charge Termination,充电终止,zh_cn,
+Constant Current,恒流,zh_cn,power
+Constant Voltage,恒压,zh_cn,power
+Trickle Charge,涓流充电,zh_cn,
+Fast Charge,快速充电,zh_cn,
+Charge Current,充电电流,zh_cn,power
+Discharge Current,放电电流,zh_cn,power
+Battery Capacity,电池容量,zh_cn,power
+State of Charge,荷电状态,zh_cn,
+Battery Fuel Gauge,电量计,zh_cn,power
+Coulomb Counter,库仑计,zh_cn,digital
+Overcharge Protection,过充保护,zh_cn,
+Overdischarge Protection,过放保护,zh_cn,
+Cell Balancing,电芯均衡,zh_cn,
+Battery Management System,电池管理系统,zh_cn,power
+Internal Resistance,内阻,zh_cn,
+Open-Circuit Voltage,开路电压,zh_cn,power
+Cutoff Voltage,截止电压,zh_cn,power
+Charge Cycle,充放电循环,zh_cn,
+Self-Discharge,自放电,zh_cn,
+Depth of Discharge,放电深度,zh_cn,
+Temperature Coefficient,温度系数,zh_cn,
+Thermistor,热敏电阻,zh_cn,
+Negative Temperature Coefficient,负温度系数,zh_cn,
+Positive Temperature Coefficient,正温度系数,zh_cn,
+Current Sense Amplifier,电流检测放大器,zh_cn,power
+High-Side Sensing,高边检测,zh_cn,
+Low-Side Sensing,低边检测,zh_cn,
+Bidirectional Current Sensing,双向电流检测,zh_cn,power
+Common-Mode Voltage Range,共模电压范围,zh_cn,power
+Offset Error,失调误差,zh_cn,analog
+Total Error,总误差,zh_cn,
+Sensing Resistor,检测电阻,zh_cn,
+Voltage Divider,分压器,zh_cn,power
+Bridge Circuit,桥式电路,zh_cn,
+Wheatstone Bridge,惠斯通电桥,zh_cn,
+Strain Gauge,应变片,zh_cn,
+Load Cell,称重传感器,zh_cn,power
+Transducer,换能器,zh_cn,
+Sensor,传感器,zh_cn,rf
+Signal Conditioning,信号调理,zh_cn,analog
+Calibration,校准,zh_cn,
+Linearity,线性度,zh_cn,
+Accuracy,精度,zh_cn,
+Precision,精密度,zh_cn,
+Sensitivity,灵敏度,zh_cn,
+Full-Scale,满量程,zh_cn,
+Full-Scale Error,满量程误差,zh_cn,
+Zero-Scale,零点,zh_cn,
+Monotonicity,单调性,zh_cn,
+No Missing Codes,无失码,zh_cn,
+Absolute Maximum,绝对最大值,zh_cn,
+Typical Value,典型值,zh_cn,
+Minimum Value,最小值,zh_cn,
+Maximum Value,最大值,zh_cn,
+Guaranteed By Design,由设计保证,zh_cn,
+Not Tested In Production,生产不测试,zh_cn,
+Unless Otherwise Noted,除非另有说明,zh_cn,
+Over The Operating Temperature Range,在工作温度范围内,zh_cn,
+Full Temperature Range,全温度范围,zh_cn,
+Room Temperature,室温,zh_cn,
+Test Conditions,测试条件,zh_cn,
+Measurement Condition,测量条件,zh_cn,
+Load Condition,负载条件,zh_cn,power
+No Load,空载,zh_cn,power
+Full Load,满载,zh_cn,power
+Half Load,半载,zh_cn,power
+Nominal Value,标称值,zh_cn,
+Tolerance,容差,zh_cn,
+Worst Case,最坏情况,zh_cn,
+Reference Design,参考设计,zh_cn,analog
+Evaluation Board,评估板,zh_cn,
+Demo Board,演示板,zh_cn,
+Bill of Materials,物料清单,zh_cn,
+Schematic,原理图,zh_cn,
+Layout,布局,zh_cn,
+Assembly Drawing,装配图,zh_cn,
+Silkscreen,丝印,zh_cn,
+Component Placement,元件布局,zh_cn,
+Design Guideline,设计指南,zh_cn,
+Design Example,设计示例,zh_cn,
+Calculation,计算,zh_cn,
+Equation,公式,zh_cn,
+Approximation,近似,zh_cn,
+Trade-Off,折中,zh_cn,
+Optimization,优化,zh_cn,
+Margin,裕量,zh_cn,
+Headroom,余量,zh_cn,
+Derating,降额,zh_cn,
+Safety Factor,安全系数,zh_cn,
+Worst-Case Analysis,最坏情况分析,zh_cn,
+Monte Carlo Analysis,蒙特卡洛分析,zh_cn,
+Sensitivity Analysis,灵敏度分析,zh_cn,
+Thermal Analysis,热分析,zh_cn,package
+Power Dissipation,功耗,zh_cn,power
+Power Loss,功率损耗,zh_cn,power
+Heat Dissipation,散热,zh_cn,
+Thermal Impedance,热阻抗,zh_cn,analog
+Steady State,稳态,zh_cn,
+Transient,瞬态,zh_cn,power
+Time Constant,时间常数,zh_cn,
+Duty Ratio,占空比,zh_cn,power
+Period,周期,zh_cn,
+Frequency,频率,zh_cn,rf
+Angular Frequency,角频率,zh_cn,rf
+Phase Angle,相位角,zh_cn,
+Phase Shift,相移,zh_cn,
+Amplitude,幅度,zh_cn,
+Peak-to-Peak,峰峰值,zh_cn,
+Root Mean Square,均方根,zh_cn,
+Average Value,平均值,zh_cn,
+Instantaneous Value,瞬时值,zh_cn,
+Direct Current,直流,zh_cn,power
+Alternating Current,交流,zh_cn,power
+Decibel,分贝,zh_cn,
+Attenuation Ratio,衰减比,zh_cn,
+Duty Factor,占空因数,zh_cn,power
+Load Step,负载阶跃,zh_cn,power
+Line Step,输入阶跃,zh_cn,
+Step Response,阶跃响应,zh_cn,
+Impulse Response,冲激响应,zh_cn,
+Loop Gain,环路增益,zh_cn,analog
+Open-Loop,开环,zh_cn,
+Closed-Loop,闭环,zh_cn,
+Negative Feedback,负反馈,zh_cn,analog
+Positive Feedback,正反馈,zh_cn,analog
+Error Amplifier,误差放大器,zh_cn,analog
+Reference Generator,基准发生器,zh_cn,analog
+Oscillator,振荡器,zh_cn,
+Ramp Generator,斜坡发生器,zh_cn,digital
+Driver Stage,驱动级,zh_cn,
+Output Stage,输出级,zh_cn,power
+Input Stage,输入级,zh_cn,power
+Bias Circuit,偏置电路,zh_cn,
+Startup Circuit,启动电路,zh_cn,
+Protection Circuit,保护电路,zh_cn,
+Control Loop,控制环路,zh_cn,
+State Machine,状态机,zh_cn,
+Sequencing,时序控制,zh_cn,
+Power Sequencing,电源时序,zh_cn,power
+Soft-Start Circuit,软启动电路,zh_cn,power
+Current Sense,电流检测,zh_cn,power
+Voltage Sense,电压检测,zh_cn,power
+Temperature Sense,温度检测,zh_cn,
+Fault Condition,故障状态,zh_cn,
+Fault Reporting,故障上报,zh_cn,
+Status Register,状态寄存器,zh_cn,digital
+Configuration Register,配置寄存器,zh_cn,digital
+Control Register,控制寄存器,zh_cn,digital
+Readback,回读,zh_cn,
+Default Value,默认值,zh_cn,
+Factory Default,出厂默认,zh_cn,
+Power-Down,断电,zh_cn,power
+Power-Up,上电,zh_cn,power
+Wake-Up,唤醒,zh_cn,
+Shutdown,关断,zh_cn,
+Enable,使能,zh_cn,
+Disable,禁用,zh_cn,
+Latch,锁存,zh_cn,
+Reset,复位,zh_cn,digital
+Clear,清零,zh_cn,
+Set,置位,zh_cn,
+Toggle,翻转,zh_cn,
+Edge-Triggered,边沿触发,zh_cn,
+Level-Triggered,电平触发,zh_cn,
+Active High,高电平有效,zh_cn,
+Active Low,低电平有效,zh_cn,
+Floating,悬空,zh_cn,
+Tie To Ground,接地,zh_cn,
+Leave Open,悬空,zh_cn,
+Bypass,旁路,zh_cn,
+Decouple,去耦,zh_cn,
+Filter,滤波,zh_cn,analog
+Buffer,缓冲,zh_cn,
+Amplify,放大,zh_cn,
+Attenuate,衰减,zh_cn,
+Rectify,整流,zh_cn,
+Regulate,稳压,zh_cn,
+Convert,转换,zh_cn,
+Switch,开关,zh_cn,
+Sink Current,灌电流,zh_cn,power
+Source Current,拉电流,zh_cn,power
+Sourcing,拉电流,zh_cn,
+Sinking,灌电流,zh_cn,
+Radio Frequency,射频,zh_cn,rf
+Low Noise Amplifier,低噪声放大器,zh_cn,analog
+Power Amplifier,功率放大器,zh_cn,power
+Mixer,混频器,zh_cn,rf
+Local Oscillator,本振,zh_cn,
+Intermediate Frequency,中频,zh_cn,rf
+Antenna,天线,zh_cn,rf
+Antenna Gain,天线增益,zh_cn,analog
+Impedance Matching Network,阻抗匹配网络,zh_cn,analog
+Return Loss,回波损耗,zh_cn,
+Insertion Loss,插入损耗,zh_cn,
+Voltage Standing Wave Ratio,电压驻波比,zh_cn,power
+Scattering Parameter,散射参数,zh_cn,digital
+Noise Figure,噪声系数,zh_cn,analog
+Cascade Noise,级联噪声,zh_cn,analog
+Third-Order Intercept Point,三阶截点,zh_cn,
+Intermodulation Distortion,互调失真,zh_cn,analog
+Adjacent Channel Power,邻道功率,zh_cn,power
+Spurious Emission,杂散发射,zh_cn,
+Phase Noise,相位噪声,zh_cn,analog
+Modulation,调制,zh_cn,
+Demodulation,解调,zh_cn,
+Amplitude Modulation,调幅,zh_cn,
+Frequency Modulation,调频,zh_cn,rf
+Phase Modulation,相位调制,zh_cn,
+Quadrature Amplitude Modulation,正交幅度调制,zh_cn,
+Orthogonal Frequency Division Multiplexing,正交频分复用,zh_cn,rf
+Spread Spectrum,扩频,zh_cn,
+Frequency Hopping,跳频,zh_cn,package
+Carrier Frequency,载波频率,zh_cn,rf
+Baseband,基带,zh_cn,device
+Bandwidth Allocation,带宽分配,zh_cn,analog
+Channel Spacing,信道间隔,zh_cn,device
+Duplexer,双工器,zh_cn,
+Filter Bank,滤波器组,zh_cn,analog
+Balun,平衡-不平衡转换器,zh_cn,
+Transceiver,收发器,zh_cn,
+Receiver Sensitivity,接收灵敏度,zh_cn,
+Transmit Power,发射功率,zh_cn,power
+Link Budget,链路预算,zh_cn,
+Path Loss,路径损耗,zh_cn,
+Free Space Path Loss,自由空间路径损耗,zh_cn,
+Fading,衰落,zh_cn,
+Multipath,多径,zh_cn,
+Diversity,分集,zh_cn,
+Beamforming,波束成形,zh_cn,
+Multiple Input Multiple Output,多输入多输出,zh_cn,power
+Motor Driver,电机驱动器,zh_cn,rf
+Brushless DC Motor,无刷直流电机,zh_cn,rf
+Brushed DC Motor,有刷直流电机,zh_cn,rf
+Stepper Motor,步进电机,zh_cn,rf
+Servo Motor,伺服电机,zh_cn,rf
+Three-Phase Inverter,三相逆变器,zh_cn,
+Half-Bridge,半桥,zh_cn,
+Full-Bridge,全桥,zh_cn,
+H-Bridge,H 桥,zh_cn,
+Gate Driver,栅极驱动器,zh_cn,device
+Dead Time,死区时间,zh_cn,
+Shoot-Through,直通,zh_cn,
+Commutation,换相,zh_cn,
+Back-EMF,反电动势,zh_cn,
+Torque,转矩,zh_cn,
+Rotor,转子,zh_cn,
+Stator,定子,zh_cn,
+Hall Sensor,霍尔传感器,zh_cn,rf
+Encoder,编码器,zh_cn,
+Resolver,旋转变压器,zh_cn,
+Field-Oriented Control,磁场定向控制,zh_cn,
+Space Vector Modulation,空间矢量调制,zh_cn,
+Trapezoidal Control,梯形波控制,zh_cn,
+Sinusoidal Control,正弦波控制,zh_cn,
+Current Loop,电流环,zh_cn,power
+Speed Loop,速度环,zh_cn,
+Position Loop,位置环,zh_cn,
+Proportional Integral Derivative,比例积分微分,zh_cn,
+Acceleration,加速度,zh_cn,
+Deceleration,减速度,zh_cn,
+Regenerative Braking,再生制动,zh_cn,
+Brake Chopper,制动斩波器,zh_cn,
+Overmodulation,过调制,zh_cn,
+Pulse Width Modulation Inverter,脉宽调制逆变器,zh_cn,
+Temperature Sensor,温度传感器,zh_cn,rf
+Pressure Sensor,压力传感器,zh_cn,rf
+Humidity Sensor,湿度传感器,zh_cn,rf
+Proximity Sensor,接近传感器,zh_cn,rf
+Accelerometer,加速度计,zh_cn,
+Gyroscope,陀螺仪,zh_cn,
+Magnetometer,磁力计,zh_cn,
+Inertial Measurement Unit,惯性测量单元,zh_cn,
+Photodiode,光电二极管,zh_cn,device
+Phototransistor,光电晶体管,zh_cn,device
+Light-Emitting Diode,发光二极管,zh_cn,device
+Laser Diode,激光二极管,zh_cn,device
+Optocoupler,光电耦合器,zh_cn,
+Image Sensor,图像传感器,zh_cn,rf
+CMOS Sensor,CMOS 传感器,zh_cn,rf
+Charge-Coupled Device,电荷耦合器件,zh_cn,
+Ambient Light Sensor,环境光传感器,zh_cn,rf
+Capacitive Touch,电容式触摸,zh_cn,
+Hall Effect,霍尔效应,zh_cn,
+Piezoelectric,压电式,zh_cn,
+Thermocouple,热电偶,zh_cn,
+Resistance Temperature Detector,电阻温度检测器,zh_cn,
+Bridge Sensor,桥式传感器,zh_cn,rf
+Audio Amplifier,音频放大器,zh_cn,analog
+Class-D Amplifier,D 类放大器,zh_cn,analog
+Class-AB Amplifier,AB 类放大器,zh_cn,analog
+Crosstalk,串扰,zh_cn,
+Channel Separation,通道分离度,zh_cn,device
+Pop and Click,爆音与咔哒声,zh_cn,
+Mute,静音,zh_cn,
+Volume Control,音量控制,zh_cn,
+Sample Rate Converter,采样率转换器,zh_cn,power
+Oversampling,过采样,zh_cn,
+Dithering,抖动处理,zh_cn,
+Equalizer,均衡器,zh_cn,
+Dynamic Range,动态范围,zh_cn,
+Speaker,扬声器,zh_cn,
+Microphone,麦克风,zh_cn,
+Microphone Preamplifier,麦克风前置放大器,zh_cn,analog
+Acoustic Overload Point,声学过载点,zh_cn,power
+Transistor-Transistor Logic,晶体管-晶体管逻辑,zh_cn,device
+Complementary Metal-Oxide-Semiconductor,互补金属氧化物半导体,zh_cn,device
+Low-Voltage Differential Signaling,低压差分信号,zh_cn,power
+Low-Voltage CMOS,低压 CMOS,zh_cn,power
+Emitter-Coupled Logic,发射极耦合逻辑,zh_cn,device
+Input High Voltage,输入高电平电压,zh_cn,power
+Input Low Voltage,输入低电平电压,zh_cn,power
+Output High Voltage,输出高电平电压,zh_cn,power
+Output Low Voltage,输出低电平电压,zh_cn,power
+Input Leakage,输入漏电,zh_cn,power
+Output Leakage,输出漏电,zh_cn,power
+High-Impedance State,高阻态,zh_cn,analog
+Bus Hold,总线保持,zh_cn,digital
+Bus Transceiver,总线收发器,zh_cn,digital
+Level Shifter,电平转换器,zh_cn,
+Voltage Translator,电压转换器,zh_cn,power
+Direction Control,方向控制,zh_cn,
+Output Enable,输出使能,zh_cn,power
+Latch-Up Immunity,抗闩锁能力,zh_cn,
+Input Clamp Diode,输入钳位二极管,zh_cn,power
+Series Termination,串联端接,zh_cn,
+Parallel Termination,并联端接,zh_cn,
+Thevenin Termination,戴维南端接,zh_cn,
+Slew Rate Control,压摆率控制,zh_cn,analog
+Output Slew Rate,输出压摆率,zh_cn,power
+Electromagnetic Emission,电磁发射,zh_cn,
+Ground Bounce,地弹,zh_cn,
+Simultaneous Switching Noise,同步开关噪声,zh_cn,power
+Power Integrity,电源完整性,zh_cn,power
+Signal Integrity,信号完整性,zh_cn,analog
+Eye Mask,眼图模板,zh_cn,
+Bit Error Rate Tester,误码率测试仪,zh_cn,
+Jitter Budget,抖动预算,zh_cn,
+Total Jitter,总抖动,zh_cn,
+Deterministic Jitter,确定性抖动,zh_cn,
+Random Jitter,随机抖动,zh_cn,
+Skew,偏斜,zh_cn,
+Clock Skew,时钟偏斜,zh_cn,digital
+Duty Cycle Error,占空比误差,zh_cn,power
+Clock Distribution,时钟分配,zh_cn,digital
+Clock Tree,时钟树,zh_cn,digital
+Zero Delay Buffer,零延迟缓冲器,zh_cn,
+Fan-Out Buffer,扇出缓冲器,zh_cn,
+Clock Generator,时钟发生器,zh_cn,digital
+Frequency Synthesizer,频率合成器,zh_cn,rf
+Voltage-Controlled Oscillator,压控振荡器,zh_cn,power
+Charge Pump PLL,电荷泵锁相环,zh_cn,rf
+Loop Filter,环路滤波器,zh_cn,analog
+Lock Time,锁定时间,zh_cn,
+Capture Range,捕获范围,zh_cn,
+Lock Range,锁定范围,zh_cn,
+Reference Clock,参考时钟,zh_cn,analog
+Spread Spectrum Clocking,扩频时钟,zh_cn,digital
+Synchronous Dynamic Random Access Memory,同步动态随机存储器,zh_cn,
+Double Data Rate,双倍数据速率,zh_cn,
+Memory Controller,内存控制器,zh_cn,
+Command Bus,命令总线,zh_cn,digital
+Address Multiplexing,地址复用,zh_cn,digital
+Row Address Strobe,行地址选通,zh_cn,digital
+Column Address Strobe,列地址选通,zh_cn,digital
+Refresh Cycle,刷新周期,zh_cn,
+Precharge,预充电,zh_cn,
+Burst Length,突发长度,zh_cn,
+Write Recovery Time,写恢复时间,zh_cn,
+Read Latency,读延迟,zh_cn,
+On-Die Termination,片上端接,zh_cn,
+Error Correcting Code,纠错码,zh_cn,
+Secure Digital Card,安全数字卡,zh_cn,
+Embedded Multi-Media Card,嵌入式多媒体卡,zh_cn,
+Universal Flash Storage,通用闪存存储,zh_cn,digital
+Serial Advanced Technology Attachment,串行高级技术附件,zh_cn,
+Peripheral Component Interconnect Express,高速外围组件互连,zh_cn,
+Ethernet,以太网,zh_cn,
+Media Independent Interface,介质无关接口,zh_cn,digital
+Physical Layer,物理层,zh_cn,
+Data Link Layer,数据链路层,zh_cn,
+Network Layer,网络层,zh_cn,
+Transmission Control Protocol,传输控制协议,zh_cn,digital
+Internet Protocol,网际协议,zh_cn,digital
+Address Resolution,地址解析,zh_cn,digital
+Media Access Control,介质访问控制,zh_cn,
+Power over Ethernet,以太网供电,zh_cn,power
+Electronic Design Automation,电子设计自动化,zh_cn,
+Hardware Description Language,硬件描述语言,zh_cn,
+Register Transfer Level,寄存器传输级,zh_cn,digital
+Gate-Level Netlist,门级网表,zh_cn,device
+Placement and Routing,布局布线,zh_cn,
+Static Timing Analysis,静态时序分析,zh_cn,
+Design Rule Check,设计规则检查,zh_cn,
+Layout Versus Schematic,版图与原理图一致性检查,zh_cn,
+Parasitic Extraction,寄生参数提取,zh_cn,
+Standard Cell,标准单元,zh_cn,
+Intellectual Property Core,知识产权核,zh_cn,
+Design for Testability,可测试性设计,zh_cn,
+Scan Chain,扫描链,zh_cn,digital
+Built-In Self-Test,内建自测试,zh_cn,
+Test Coverage,测试覆盖率,zh_cn,
+Automatic Test Equipment,自动测试设备,zh_cn,
+Wafer Probe,晶圆测试,zh_cn,
+Final Test,成品测试,zh_cn,
+Yield,良率,zh_cn,
+Defect Density,缺陷密度,zh_cn,
+Process Node,工艺节点,zh_cn,
+Feature Size,特征尺寸,zh_cn,
+Photolithography,光刻,zh_cn,
+Etching,刻蚀,zh_cn,
+Deposition,沉积,zh_cn,
+Ion Implantation,离子注入,zh_cn,
+Chemical Mechanical Polishing,化学机械抛光,zh_cn,
+Thermal Oxidation,热氧化,zh_cn,package
+Mask Alignment,掩模对准,zh_cn,
+Cleanroom,洁净室,zh_cn,
+Wafer Fab,晶圆厂,zh_cn,
+Assembly and Test,封装测试,zh_cn,
+Outsourced Semiconductor Assembly and Test,半导体封装测试代工,zh_cn,device
+Load Transient Response,负载瞬态响应,zh_cn,power
+Line Transient Response,线性瞬态响应,zh_cn,power
+Load Step Response,负载阶跃响应,zh_cn,power
+Recovery Time,恢复时间,zh_cn,
+Overshoot,过冲,zh_cn,
+Undershoot,下冲,zh_cn,
+Ring Back,回铃,zh_cn,
+Damping,阻尼,zh_cn,package
+Quality Factor,品质因数,zh_cn,
+Resonant Frequency,谐振频率,zh_cn,rf
+Self-Resonant Frequency,自谐振频率,zh_cn,rf
+Impedance Curve,阻抗曲线,zh_cn,analog
+Capacitance,电容量,zh_cn,
+Resistance,电阻,zh_cn,
+Conductance,电导,zh_cn,
+Reactance,电抗,zh_cn,
+Susceptance,电纳,zh_cn,
+Admittance,导纳,zh_cn,
+Impedance,阻抗,zh_cn,analog
+Resistivity,电阻率,zh_cn,
+Conductivity,电导率,zh_cn,
+Permittivity,介电常数,zh_cn,
+Permeability,磁导率,zh_cn,
+Dielectric Constant,介电常数,zh_cn,
+Dielectric Strength,介电强度,zh_cn,
+Dielectric Loss,介质损耗,zh_cn,
+Dissipation Factor,损耗因数,zh_cn,
+Loss Tangent,损耗角正切,zh_cn,
+Leakage Inductance,漏感,zh_cn,
+Magnetizing Inductance,励磁电感,zh_cn,
+Winding Resistance,绕组电阻,zh_cn,
+Turns Ratio,匝数比,zh_cn,
+Primary Winding,初级绕组,zh_cn,
+Secondary Winding,次级绕组,zh_cn,
+Core Loss,磁芯损耗,zh_cn,
+Core Saturation,磁芯饱和,zh_cn,device
+Air Gap,气隙,zh_cn,
+Flux Density,磁通密度,zh_cn,
+Magnetic Flux,磁通,zh_cn,
+Eddy Current,涡流,zh_cn,power
+Skin Effect,集肤效应,zh_cn,
+Proximity Effect,邻近效应,zh_cn,
+Coupling Coefficient,耦合系数,zh_cn,
+Mutual Inductance,互感,zh_cn,
+Transformer,变压器,zh_cn,
+Isolation Voltage,隔离电压,zh_cn,power
+Reinforced Isolation,加强绝缘,zh_cn,
+Basic Isolation,基本绝缘,zh_cn,
+Creepage Distance,爬电距离,zh_cn,
+Clearance Distance,电气间隙,zh_cn,
+Galvanic Isolation,电气隔离,zh_cn,
+Isolated Supply,隔离电源,zh_cn,power
+Common-Ground,共地,zh_cn,
+Differential Mode Noise,差模噪声,zh_cn,analog
+Common Mode Choke,共模扼流圈,zh_cn,analog
+Input Filter,输入滤波器,zh_cn,power
+EMI Filter,电磁干扰滤波器,zh_cn,analog
+Snubber Circuit,缓冲电路,zh_cn,
+RC Snubber,RC 缓冲电路,zh_cn,
+Clamp Circuit,钳位电路,zh_cn,
+Crowbar Circuit,撬棒电路,zh_cn,
+Transient Voltage Suppressor,瞬态电压抑制器,zh_cn,power
+Metal Oxide Varistor,金属氧化物压敏电阻,zh_cn,
+Fuse,保险丝,zh_cn,
+Resettable Fuse,自恢复保险丝,zh_cn,digital
+Circuit Breaker,断路器,zh_cn,
+Reverse Polarity Protection,反极性保护,zh_cn,device
+Ideal Diode,理想二极管,zh_cn,device
+ORing Controller,或门控制器,zh_cn,
+Hot Swap Controller,热插拔控制器,zh_cn,
+Inrush Limiter,浪涌限制器,zh_cn,
+Power Path Management,电源路径管理,zh_cn,power
+Load Switch,负载开关,zh_cn,power
+Power Distribution Switch,配电开关,zh_cn,power
+Current-Limited Switch,限流开关,zh_cn,power
+Sequencer,时序控制器,zh_cn,
+Supervisor,监控器,zh_cn,
+Voltage Detector,电压检测器,zh_cn,power
+Reset IC,复位芯片,zh_cn,digital
+Watchdog,看门狗,zh_cn,
+Thermal Derating,热降额,zh_cn,package
+Power Derating Curve,功率降额曲线,zh_cn,power
+Thermal Resistance Junction-to-Ambient,结到环境热阻,zh_cn,device
+Thermal Via Array,散热过孔阵列,zh_cn,package
+Copper Area,铜箔面积,zh_cn,
+Airflow,气流,zh_cn,rf
+Forced Air Cooling,强制风冷,zh_cn,
+Natural Convection,自然对流,zh_cn,
+Heat Spreader,均热板,zh_cn,
+Thermal Interface Material,导热界面材料,zh_cn,digital
+Measurement,测量,zh_cn,
+Oscilloscope,示波器,zh_cn,
+Probe,探头,zh_cn,
+Bandwidth Limit,带宽限制,zh_cn,analog
+Ground Lead,接地引线,zh_cn,package
+Differential Probe,差分探头,zh_cn,analog
+Current Probe,电流探头,zh_cn,power
+Multimeter,万用表,zh_cn,
+Source Measure Unit,源测量单元,zh_cn,device
+Electronic Load,电子负载,zh_cn,power
+Power Analyzer,功率分析仪,zh_cn,power
+Network Analyzer,网络分析仪,zh_cn,
+Spectrum Analyzer,频谱分析仪,zh_cn,
+Function Generator,函数发生器,zh_cn,
+Signal Generator,信号发生器,zh_cn,analog
+Logic Analyzer,逻辑分析仪,zh_cn,
+Time Domain Reflectometry,时域反射,zh_cn,
+Calibration Certificate,校准证书,zh_cn,
+Measurement Uncertainty,测量不确定度,zh_cn,
+Traceability,可追溯性,zh_cn,
+Guard Band,保护带,zh_cn,
+Test Fixture,测试夹具,zh_cn,
+Kelvin Probe,开尔文探针,zh_cn,
+Four-Point Probe,四探针,zh_cn,
+Shunt Calibration,分流校准,zh_cn,
+Zero Offset,零点偏移,zh_cn,analog
+Span Calibration,量程校准,zh_cn,
+GND,接地,zh_cn,power
+VIN,输入电压,zh_cn,power
+VOUT,输出电压,zh_cn,power
+VCC,电源电压,zh_cn,power
+VDD,电源电压,zh_cn,power
+VSS,地,zh_cn,power
+VREF,基准电压,zh_cn,analog
+VFB,反馈电压,zh_cn,power
+ESR,等效串联电阻,zh_cn,power
+ESL,等效串联电感,zh_cn,power
+CIN,输入电容,zh_cn,power
+COUT,输出电容,zh_cn,power
+MOSFET,MOSFET,zh_cn,device
+SOIC,SOIC 封装,zh_cn,package
+QFN,QFN 封装,zh_cn,package
+SOT,SOT 封装,zh_cn,package
+DFN,DFN 封装,zh_cn,package
+BGA,BGA 封装,zh_cn,package
+PCB,印制电路板,zh_cn,package
+ESD,静电放电,zh_cn,package
+EMI,电磁干扰,zh_cn,package
+EMC,电磁兼容,zh_cn,package
+PWM,脉宽调制,zh_cn,power
+PFM,脉冲频率调制,zh_cn,power
+ADC,模数转换器,zh_cn,analog
+DAC,数模转换器,zh_cn,analog
+SPI,串行外设接口,zh_cn,digital
+I2C,I2C 总线,zh_cn,digital
+UART,串口,zh_cn,digital
+GPIO,通用输入输出,zh_cn,digital
+MCU,微控制器,zh_cn,digital
+CPU,中央处理器,zh_cn,digital
+RAM,随机存储器,zh_cn,digital
+ROM,只读存储器,zh_cn,digital
+EEPROM,电可擦写存储器,zh_cn,digital
+DMA,直接内存访问,zh_cn,digital
+PLL,锁相环,zh_cn,rf
+LDO,低压差线性稳压器,zh_cn,power
+DC-DC,直流-直流,zh_cn,power
+AC-DC,交流-直流,zh_cn,power
+UVLO,欠压锁定,zh_cn,power
+OVP,过压保护,zh_cn,power
+OCP,过流保护,zh_cn,power
+OTP,过温保护,zh_cn,power
+SS,软启动,zh_cn,power
+COMP,补偿,zh_cn,power
+FB,反馈,zh_cn,power
+SW,开关节点,zh_cn,power
+BST,自举,zh_cn,power
+EN,使能,zh_cn,power
+NC,空脚,zh_cn,package
+TYP,典型值,zh_cn,package
+MAX,最大值,zh_cn,package
+MIN,最小值,zh_cn,package

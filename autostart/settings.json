@@ -1,0 +1,15 @@
+﻿{
+    "_说明": "Zotero PDF2zh 自动启动配置。修改后运行 pdf2zh-autostart.ctl.ps1 restart 生效。",
+    "port": 8890,
+    "serverDir": "E:\\Zotero\\PDF2Zh\\server",
+    "interpreter": "auto",
+    "pythonExe": "",
+    "uvExe": "C:\\Users\\mi'yu\\.local\\bin\\uv.exe",
+    "checkUpdateOnStart": false,
+    "stopServerWhenZoteroExits": true,
+    "zoteroExitGraceSeconds": 120,
+    "pollSeconds": 5,
+    "serverStartTimeoutSeconds": 180,
+    "startRetrySeconds": 60,
+    "logRetentionDays": 7
+}
