@@ -42,7 +42,7 @@ def emit(kind: str, payload: dict) -> None:
         pass
 
 
-# 阶段名中英对照（与 app.py 里的保持一致，日志和界面都显示中文）
+# 阶段名中英对照（与 core.py 保持一致，日志和界面都显示中文）
 _STAGE_CN = {
     "Parse PDF and Create Intermediate Representation": "解析 PDF 结构",
     "Parse Page Layout": "分析页面版面",
