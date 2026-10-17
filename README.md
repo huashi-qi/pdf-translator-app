@@ -144,6 +144,18 @@ python src/app.py
 
 ---
 
+## 如何更新
+
+改完代码后跑一条命令就推送：
+
+```powershell
+.\sync-and-push.ps1 -Message "说明" -Proxy
+```
+
+完整流程见 [UPDATING.md](UPDATING.md)。
+
+---
+
 ## 版本历史
 
 各版本的改动详见 [CHANGELOG.md](CHANGELOG.md)。
