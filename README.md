@@ -144,6 +144,12 @@ python src/app.py
 
 ---
 
+## 版本历史
+
+各版本的改动详见 [CHANGELOG.md](CHANGELOG.md)。
+
+---
+
 ## 许可
 
 **本项目以 AGPL-3.0 发布。**
