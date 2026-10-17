@@ -60,7 +60,7 @@ def open_studio(root, C, start_path: str = "", on_save=None):
     # ⑧ 夜间模式下自动开启反色预览（看白底 PDF 不刺眼）
     _auto_inv = False
     try:
-        import app as _A
+        import core as _A
         _c = _A.load_config()
         _theme_now = str(_c.get("ui_theme") or "light").lower()
         if _theme_now == "auto":
