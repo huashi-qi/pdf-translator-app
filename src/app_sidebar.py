@@ -7,9 +7,9 @@ r"""侧边栏版界面 —— 独立入口（新版）。
 与经典版的关系
 --------------
 两者共用同一套后端：
-    · 翻译：调用 app.py 的 run_translate / build_worker_args
+    · 翻译：调用 core.py 的 run_translate / build_worker_args
     · 术语表：glossary_hook
-    · 历史：app.py 的 load_history / add_history
+    · 历史：core.py 的 load_history / add_history
     · 工具：pdf_studio（自由编辑器）/ pdf_editor / pdf_viewer / qa / learn_check
 只是把「顶部工具栏 + 标签页」换成「左侧导航 + 右侧内容区」。
 
@@ -29,8 +29,8 @@ APP_DIR = Path(__file__).resolve().parent
 if str(APP_DIR) not in sys.path:
     sys.path.insert(0, str(APP_DIR))
 
-# 复用 app.py 的后端能力
-import app as A  # noqa: E402
+# 后端能力全在 core.py（无 UI 依赖，可单测）
+import core as A  # noqa: E402
 
 
 def main() -> int:
@@ -1251,6 +1251,37 @@ def main() -> int:
 
         rec_lb.bind("<Double-1>", open_recent)
         refresh_recent()
+
+        # ④ 恢复上次未完成的批量队列
+        def _restore_queue():
+            try:
+                saved = A.load_queue()
+            except Exception:
+                return
+            left = [it["path"] for it in saved
+                    if it.get("path") and Path(it["path"]).is_file()]
+            if not left:
+                try:
+                    A.clear_queue()
+                except Exception:
+                    pass
+                return
+            if messagebox.askyesno(
+                    "继续上次的批量任务",
+                    "检测到上次有 %d 个文件没翻完：\n\n%s\n\n现在继续吗？"
+                    % (len(left),
+                       "\n".join("· " + Path(p).name for p in left[:6])
+                       + ("\n…" if len(left) > 6 else ""))):
+                state["batch"] = left
+                _update_queue()
+                toast("已恢复 %d 个待翻译文件" % len(left), "ok")
+            else:
+                try:
+                    A.clear_queue()
+                except Exception:
+                    pass
+
+        root.after(600, _restore_queue)
 
         # PanedWindow 初始高度：步骤 ~30% / 术语 ~26% / 日志占剩余
         # （第一次布局完成后设一次，之后用户拖动就由他控制）
@@ -2487,35 +2518,42 @@ def main() -> int:
                 root.after(80, lambda: (_invalidate("settings"),
                                         show("settings")))
 
-        # ⑭ 一键切换界面
+        # 关于页：诊断包入口（⑫ 反馈问题用）
         cur_cat["k"] = "about"
-        section("界面版本")
-        tk.Label(pages["about"], text="当前：侧边栏版（新版）", bg=C["bg"],
-                 fg=C["text_sub"], font=_f(9)).pack(anchor="w")
+        section("问题反馈")
 
-        def switch_to_classic():
-            c = A.load_config()
-            c["ui_layout"] = "classic"
-            A.save_config(c)
+        def make_diagnostic():
+            """把环境+配置+日志打包成一个 txt，方便发给开发者。"""
+            log_w = widgets.get("translate.log")
+            log_text = ""
+            try:
+                if log_w is not None:
+                    log_text = log_w.get("1.0", "end")
+            except Exception:
+                pass
+            try:
+                p = A.build_diagnostic(log_text)
+            except Exception as exc:
+                messagebox.showerror("生成失败", str(exc))
+                return
+            if not p:
+                messagebox.showerror("生成失败", "无法写入诊断文件")
+                return
             if messagebox.askyesno(
-                    "切换界面",
-                    "将切换到【经典版】界面。\n\n"
-                    "经典版需要用「启动.vbs」打开。\n"
-                    "要让设置立即生效并重启到经典版吗？",
-                    parent=root):
-                import subprocess as _sp
+                    "诊断报告已生成",
+                    "已生成：%s\n\n"
+                    "内容包含运行环境、脱敏后的配置、最近日志。\n"
+                    "API Key 等敏感信息已自动移除。\n\n"
+                    "现在打开所在文件夹吗？" % Path(p).name):
                 try:
-                    _sp.Popen([sys.executable, str(APP_DIR / "app.py")],
-                              creationflags=0x08000000)
+                    A.open_file_with(Path(p).parent, A.load_config(), mode="folder")
                 except Exception:
                     pass
-                root.after(400, root.destroy)
-            else:
-                toast("已记录，下次打开「启动.vbs」即用经典版", "ok")
 
-        flat_btn(pages["about"], "切换到经典版界面", switch_to_classic).pack(
+        flat_btn(pages["about"], "生成诊断报告", make_diagnostic).pack(
             anchor="w", pady=(6, 0))
-        tk.Label(pages["about"], text="（两个版本共用同一套后端，随时可切回）",
+        tk.Label(pages["about"],
+                 text="（软件出问题时生成一个，连同现象一起反馈；不含密钥）",
                  bg=C["bg"], fg=C["muted"], font=_f(8)).pack(anchor="w")
 
         # 系统深色模式检测（供「跟随系统」用）
@@ -2752,6 +2790,15 @@ def main() -> int:
         except Exception:
             pass
 
+        # ④ 队列落盘：关掉软件也不丢任务
+        try:
+            A.save_queue([{"path": p, "name": Path(p).name}
+                          for p in (state.get("batch") or [])])
+            if not state.get("batch") and not state.get("running"):
+                A.clear_queue()
+        except Exception:
+            pass
+
     def do_cancel():
         """终止正在进行的翻译。"""
         if not A.is_translating():
@@ -2787,7 +2834,31 @@ def main() -> int:
         tk.Label(body, text="要翻译的文件", bg=C["bg"], fg=C["muted"],
                  font=_f(9), anchor="w").pack(anchor="w")
         tk.Label(body, text=Path(pdf_path).name, bg=C["bg"], fg=C["accent"],
-                 font=_f(11, "bold"), anchor="w").pack(anchor="w", pady=(2, 12))
+                 font=_f(11, "bold"), anchor="w").pack(anchor="w", pady=(2, 4))
+
+        # ⑤ 断点续译：上次没翻完就提示
+        _resume = {"rec": None}
+        try:
+            _resume["rec"] = A.get_progress(pdf_path)
+        except Exception:
+            pass
+        if _resume["rec"]:
+            rec = _resume["rec"]
+            done_n = len(rec.get("done_pages") or [])
+            tot_n = int(rec.get("total") or 0)
+            rf = tk.Frame(body, bg=C["accent_sf"])
+            rf.pack(fill="x", pady=(0, 10))
+            tk.Label(rf, text="⏸  发现上次未完成",
+                     bg=C["accent_sf"], fg=C["accent"],
+                     font=_f(9, "bold"), anchor="w").pack(
+                anchor="w", padx=10, pady=(6, 0))
+            tk.Label(rf,
+                     text="已翻完 %d 页 / 共 %d 页，可以只补剩下没翻的。"
+                          % (done_n, tot_n or done_n),
+                     bg=C["accent_sf"], fg=C["text_sub"],
+                     font=_f(8), anchor="w").pack(anchor="w", padx=10, pady=(0, 6))
+        else:
+            rf = None
 
         def row(label, hint=""):
             f = tk.Frame(body, bg=C["bg"])
@@ -2846,7 +2917,25 @@ def main() -> int:
         def go():
             c = A.load_config()
             c["output_mode"] = mode_map.get(mode_v.get(), "mono")
-            c["pages"] = pages_v.get().strip()
+            pages_spec = pages_v.get().strip()
+
+            # ⑤ 断点续译：上次没翻完，问一下要不要只补剩下的
+            rec = _resume.get("rec")
+            if rec and not pages_spec:
+                done = rec.get("done_pages") or []
+                total = int(rec.get("total") or 0)
+                rest = A.remaining_pages(total, done) if total else ""
+                if rest and messagebox.askyesno(
+                        "断点续译",
+                        "上次已翻完 %d / %d 页。\n\n"
+                        "只补剩下的第 %s 页吗？\n\n"
+                        "选「否」将从第 1 页重新开始（更慢，但输出更完整）。"
+                        % (len(done), total, rest),
+                        parent=dlg):
+                    pages_spec = rest
+                    toast("将从断点继续（剩余 %s）" % rest, "ok")
+
+            c["pages"] = pages_spec
             c["output_dir"] = dir_v.get().strip()
             c["skip_toc"] = bool(skip_toc_v.get())
             c["quality_check"] = bool(qc_v.get())
@@ -2985,7 +3074,7 @@ def main() -> int:
         ui_q.put(("prog", 0.0, "准备中"))
 
         def on_prog(v, stage):
-            # app.py 的 on_progress 只给 (值, 阶段)，进度事件里的
+            # core.py 的 on_progress 只给 (值, 阶段)，进度事件里的
             # stage_current / stage_total（页数）从 A._PROG_EXTRA 读
             ui_q.put(("prog", v, stage, getattr(A, "_PROG_EXTRA", None)))
 
@@ -3028,17 +3117,21 @@ def main() -> int:
                     v = max(0.0, min(100.0, float(item[1])))
                     if widgets.get("translate.prog") is not None:
                         widgets["translate.prog"].configure(value=v)
-                    # 已用时间 + 剩余时间（按当前速率线性估算）
+                    # 已用时间 + 剩余时间（按阶段权重估算，比线性准）
                     try:
                         t_start = float(state.get("t_start") or 0)
                         if t_start > 0 and v > 0.5:
                             used = time.time() - t_start
-                            eta = used * (100.0 - v) / v
+                            eta = A.estimate_eta(
+                                used, v,
+                                str(stage_live.get("name") or ""),
+                                stage_done)
                             el = widgets.get("translate.eta")
                             if el is not None:
                                 el.configure(
                                     text="已用 %s · 剩余约 %s"
-                                         % (_fmt_sec(used), _fmt_sec(eta)))
+                                         % (_fmt_sec(used),
+                                            A.fmt_duration(eta)))
                         elif t_start > 0:
                             el = widgets.get("translate.eta")
                             if el is not None:
@@ -3079,6 +3172,18 @@ def main() -> int:
                     state["running"] = False
                     if ok and out_file:
                         set_status("完成")
+                        # ⑤ 断点续译：记下这份 PDF 已经翻完的页
+                        try:
+                            _p = state.get("cur_file") or ""
+                            _pages = timing.get("pages") or []
+                            _total = int(timing.get("total_pages") or 0)
+                            if _p and _pages:
+                                A.save_progress(_p, _pages, _total, out_file)
+                            elif _p:
+                                # 没有页信息就当作全部完成
+                                A.clear_progress(_p)
+                        except Exception:
+                            pass
                         if timing:
                             A._UI_STATE["stages"] = timing.get("stages") or []
                             A._UI_STATE["total"] = timing.get("total") or 0
@@ -3095,6 +3200,7 @@ def main() -> int:
                         nxt = (state.get("batch") or [])
                         if nxt:
                             state["batch"] = nxt[1:]
+                            _update_queue()          # ④ 落盘新队列
                             root.after(400, lambda p=nxt[0]: start(p))
                         else:
                             # 批量结束 / 单个完成 → 按设置处理
@@ -3218,7 +3324,7 @@ def main() -> int:
         return _gloss_total_terms._n
     _gloss_total_terms._n = None
 
-    # ================= 工具入口（复用 app.py 里的实现）=================
+    # ================= 工具入口（复用 core.py 里的实现）=================
     def _open_studio():
         """打开自由编辑器。"""
         try:
