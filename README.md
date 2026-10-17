@@ -144,6 +144,27 @@ python src/app.py
 
 ---
 
+## 开发
+
+### 跑测试
+
+```powershell
+# 安装 pytest（首次）
+.\runtime\python.exe -m pip install pytest --break-system-packages
+
+# 跑全部测试
+.\runtime\python.exe -m pytest -q
+```
+
+覆盖 71 个用例：
+
+| 文件 | 覆盖内容 | 用例数 |
+| --- | --- | --- |
+| `test_pdf_studio.py` | 文字块识别、移动、撤销栈、页面操作 | 19 |
+| `test_core_features.py` | 队列持久化、断点续译、ETA、诊断包 | 28 |
+| `test_glossary_hook.py` | 术语替换、词边界、占位符还原 | 12 |
+| `test_qa_learn.py` | 质量检查、扫描检测、术语提取 | 12 |
+
 ## 如何更新
 
 改完代码后跑一条命令就推送：
